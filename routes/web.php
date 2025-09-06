@@ -101,8 +101,8 @@ Route::middleware(['auth', 'cek.jabatan:pemimpin'])->group(function () {
 
 
 Route::get('/test-fonnte', function () {
-    $token = 'aUNu6q88rhW5ZycH5L7m';
-    $targetNumber = '6285894596046';
+    $token = '';
+    $targetNumber = '';
     $response = Http::withHeaders(['Authorization' => $token])
         ->post('https://api.fonnte.com/send', [
             'target' => $targetNumber,
