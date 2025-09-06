@@ -56,7 +56,7 @@ class NotifikasiController extends Controller
     private function kirimNotifikasiUmumFonnte(User $user)
     {
         // Token Fonnte Anda
-        $token = 'aUNu6q88rhW5ZycH5L7m';
+        $token = ' '; // using api fontee
 
         $targetNumber = $user->no_telepon;
 
